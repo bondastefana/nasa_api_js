@@ -1,0 +1,91 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+header {
+    display: flex;
+}
+
+img {
+    height: 100px;
+}
+
+#date-picker {
+    margin: 30px 0;
+}
+
+#calendar {
+    padding: 1px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+#image-button {
+    padding: 3px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(12, 12, 160, 0.842);
+    color: white;
+}
+
+#image-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#image-title {
+    text-align: center;
+}
+
+.image-of-the-day {
+    height: 450px;
+}
+
+#error-message {
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.errors {
+    color: red;
+    font-size: 20px;
+}
+
+#loader {
+    position: absolute;
+    top: 50%;
+    padding: 20px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #dd1717;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
